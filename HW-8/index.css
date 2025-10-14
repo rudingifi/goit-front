@@ -1,0 +1,16 @@
+/* selector class */
+.yellow {
+    color: yellow;
+}
+#greycol {
+    color: grey;
+}
+.pink {
+    color: pink;
+}
+.green {
+    color: green;
+}
+.red {
+    color: rgb(255, 0, 0);
+}
