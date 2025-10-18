@@ -1,5 +1,5 @@
 /* link styles */
-h1 {
+.header-logo {
     color: rgb(0, 140, 255);
     font-size: 36px;
     font-family: "Raleway", sans-serif;
@@ -13,6 +13,6 @@ button {
     background-color: rgb(0, 140, 255);
 }
 
-.web {
+.contacts-logo {
     color: rgb(0, 140, 255);
 }
