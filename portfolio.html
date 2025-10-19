@@ -3,99 +3,152 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <h1>WebStudio</h1>
-      <nav>
-        <ul>
-          <li><a href="">WebStudio</a></li>
-          <li><a href="">Студія</a></li>
-          <li><a href="./portfolio.html">Портфоліо</a></li>
+    <header class="header">
+      <h1 class="header-title">WebStudio</h1>
+      <nav class="header-nav">
+        <ul class="header-list">
+          <li class="header-item">
+            <a class="header-link" href="">WebStudio</a>
+          </li>
+          <li class="header-item"><a class="header-link" href="">Студія</a></li>
+          <li class="header-item">
+            <a class="header-link" href="./portfolio.html">Портфоліо</a>
+          </li>
         </ul>
-        <ul>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <ul class="header-list_contacts">
+          <li class="header-item">
+            <a class="email-info" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="header-item">
+            <a class="phone-info" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="main">
       <!-- hero section -->
-      <section>
-        <ul>
-          <li><a href="">усі</a></li>
-          <li><a href="">вебсайти</a></li>
-          <li><a href="">додатки</a></li>
-          <li><a href="">дизайн</a></li>
-          <li><a href="">маркетинг</a></li>
+      <section class="section-hero">
+        <ul class="hero-list">
+          <li class="hero-item"><a href="">усі</a></li>
+          <li class="hero-item"><a href="">вебсайти</a></li>
+          <li class="hero-item"><a href="">додатки</a></li>
+          <li class="hero-item"><a href="">дизайн</a></li>
+          <li class="hero-item"><a href="">маркетинг</a></li>
         </ul>
       </section>
       <!--testimonials-->
-      <section>
-        <ul>
-          <li>
-            <img src="img/technoryak.jpg" alt="technoryak" />
-            <h2>ТехноРяк</h2>
-            <p>веб-сайт</p>
-          </li>
-          <li>
-            <img src="img/poster.jpg" width="600" alt="poster" />
-            <h2>Постер new orlean vs golden star</h2>
-            <p>дизайн</p>
-          </li>
-          <li>
-            <img src="img/restoran.jpg" width="600" alt="restoran" />
-            <h2>Ресторан seafood</h2>
-            <p>додаток</p>
-          </li>
-          <li>
-            <img src="img/project prime.jpg" width="600" alt="project prime" />
-            <h2>Project Prime</h2>
-            <p>маркетинг</p>
-          </li>
-          <li>
-            <img src="img/project box.jpg" width="600" alt="project box" />
-            <h2>Project Box</h2>
-            <p>додаток</p>
-          </li>
-          <li>
-            <img src="img/inspiration.jpg" width="600" alt="inspiration" />
-            <h2>Inspiration</h2>
-            <p>веб-сайт</p>
-          </li>
-          <li>
+      <section class="section-testimonials">
+        <ul class="testimonials-list">
+          <li class="testimonials-item">
             <img
+              class="testimonials-foto"
+              src="img/technoryak.jpg"
+              alt="technoryak"
+            />
+            <h2 class="technoryak">ТехноРяк</h2>
+            <p class="website">веб-сайт</p>
+          </li>
+          <li class="testimonials-item">
+            <img
+              class="testimonials-foto"
+              src="img/poster.jpg"
+              width="600"
+              alt="poster"
+            />
+            <h2 class="poster">Постер new orlean vs golden star</h2>
+            <p class="design">дизайн</p>
+          </li>
+          <li class="testimonials-item">
+            <img
+              class="testimonials-foto"
+              src="img/restoran.jpg"
+              width="600"
+              alt="restoran"
+            />
+            <h2 class="restoran">Ресторан seafood</h2>
+            <p class="app">додаток</p>
+          </li>
+          <li class="testimonials-item">
+            <img
+              class="testimonials-foto"
+              src="img/project prime.jpg"
+              width="600"
+              alt="project prime"
+            />
+            <h2 class="project-prime">Project Prime</h2>
+            <p class="marketing">маркетинг</p>
+          </li>
+          <li class="testimonials-item">
+            <img
+              class="testimonials-foto"
+              src="img/project box.jpg"
+              width="600"
+              alt="project box"
+            />
+            <h2 class="project-box">Project Box</h2>
+            <p class="app">додаток</p>
+          </li>
+          <li class="testimonials-item">
+            <img
+              class="testimonials-foto"
+              src="img/inspiration.jpg"
+              width="600"
+              alt="inspiration"
+            />
+            <h2 class="inspiration">Inspiration</h2>
+            <p class="website">веб-сайт</p>
+          </li>
+          <li class="testimonials-item">
+            <img
+              class="testimonials-foto"
               src="img/vidannya limited.jpg"
               width="600"
               alt="vidannya limited"
             />
-            <h2>Видання Limited editon</h2>
-            <p>дизайн</p>
+            <h2 class="vidannya-limited">Видання Limited editon</h2>
+            <p class="design">дизайн</p>
           </li>
-          <li>
-            <img src="img/project lab.jpg" width="600" alt="project lab" />
-            <h2>Проєкт Lab</h2>
-            <p>маркетинг</p>
-          </li>
-          <li>
+          <li class="testimonials-item">
             <img
+              class="testimonials-foto"
+              src="img/project lab.jpg"
+              width="600"
+              alt="project lab"
+            />
+            <h2 class="project-lab">Проєкт Lab</h2>
+            <p class="marketing">маркетинг</p>
+          </li>
+          <li class="testimonials-item">
+            <img
+              class="testimonials-foto"
               src="img/growing buisness.jpg"
               width="600"
               alt="growing buisness"
             />
-            <h2>Growing Buisness</h2>
-            <p>додаток</p>
+            <h2 class="growing-buisness">Growing Buisness</h2>
+            <p class="app">додаток</p>
           </li>
         </ul>
       </section>
       <!--register-->
-      <section>
-        <h2>WebStudio</h2>
-        <ul>
-          <li><p>м. Київ, пр-т Лесі Українки, 26</p></li>
-          <li><p>info@devstudio.com</p></li>
-          <li><p>+38 096 111 11 11</p></li>
+      <section class="contacts">
+        <h2 class="contacts-logo">WebStudio</h2>
+        <ul class="contacts-list">
+          <li class="contacts-item">
+            <p class="address">м. Київ, пр-т Лесі Українки, 26</p>
+          </li>
+          <li class="contacts-item"><p class="email">info@devstudio.com</p></li>
+          <li class="contacts-item"><p class="phone">+38 096 111 11 11</p></li>
         </ul>
       </section>
     </main>
