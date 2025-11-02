@@ -5,6 +5,7 @@
         font-size: 26px;
         letter-spacing: 0.03em;
         color: #2196f3;
+        margin: 0% auto;
 }
 .header-link {
         font-family: "Roboto", sans-serif;
@@ -12,9 +13,11 @@
             font-size: 14px;
             letter-spacing: 0.02em;
             color: #212121;
+            margin: 0% auto;
 }
 .header-link:hover {
     color: #2196F3;
+    margin: 0% auto;
 }
 .email-info, .phone-info {
     font-family: "Roboto", sans-serif;
@@ -22,9 +25,11 @@
         font-size: 14px;
         letter-spacing: 0.02em;
         color: #757575;
+        margin: 0% auto;
 }
 .email-info:hover, .phone-info:hover {
     color: #2196F3;
+    margin: 0% auto;
 }
 .hero-title {
     font-family: "Roboto", sans-serif;
@@ -35,11 +40,13 @@
         text-transform: uppercase;
         text-align: center;
         color: #fff;
+        margin: 0% auto;
 }
 .main-hero {
     background-color: #2F303A;
     width: 1600px;
         height: 600px;
+        margin: 0% auto;
 }
 .button {
     font-family: "Roboto", sans-serif;
@@ -54,6 +61,7 @@
                     letter-spacing: 0.06em;
                     text-align: center;
                     color: #fff;
+                    margin: 0% auto;
 }
 .details {
     font-family: "Roboto", sans-serif;
@@ -62,6 +70,7 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #212121;
+        margin: 0% auto;
 }
 .details-item {
     font-family: "Roboto", sans-serif;
@@ -70,6 +79,7 @@
         line-height: 171%;
         letter-spacing: 0.03em;
         color: #757575;
+        margin: 0% auto;
 }
 .punctuality {
     font-family: "Roboto", sans-serif;
@@ -78,6 +88,7 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #212121;
+        margin: 0% auto;
 }
 .punctuality-item {
     font-family: "Roboto", sans-serif;
@@ -86,6 +97,7 @@
         line-height: 171%;
         letter-spacing: 0.03em;
         color: #757575;
+        margin: 0% auto;
 }
 .planning {
     font-family: "Roboto", sans-serif;
@@ -94,6 +106,7 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #212121;
+        margin: 0% auto;
 }
 .planning-item {
     font-family: "Roboto", sans-serif;
@@ -102,6 +115,7 @@
         line-height: 171%;
         letter-spacing: 0.03em;
         color: #757575;
+        margin: 0% auto;
 }
 .modern-technologies {
     font-family: "Roboto", sans-serif;
@@ -110,6 +124,7 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #212121;
+        margin: 0% auto;
 }
 .modern-technologies-item {
     font-family: "Roboto", sans-serif;
@@ -118,6 +133,7 @@
         line-height: 171%;
         letter-spacing: 0.03em;
         color: #757575;
+        margin: 0% auto;
 }
 .gallery-title {
     font-family: "Roboto", sans-serif;
@@ -126,6 +142,7 @@
         letter-spacing: 0.03em;
         text-align: center;
         color: #212121;
+        margin: 0% auto;
 }
 
 .team-title {
@@ -135,6 +152,7 @@
         letter-spacing: 0.03em;
         text-align: center;
         color: #212121;
+        margin: 0% auto;
 }
 .team-name {
     font-family: "Roboto", sans-serif;
@@ -143,6 +161,7 @@
         letter-spacing: 0.03em;
         text-align: center;
         color: #212121;
+        margin: 0% auto;
 }
 .team-role {
     font-family: "Roboto", sans-serif;
@@ -151,6 +170,7 @@
         letter-spacing: 0.03em;
         text-align: center;
         color: #757575;
+        margin: 0% auto;
 }
 
 body {
@@ -159,7 +179,8 @@ body {
 .contacts {
     background: #2f303a;
     width: 1600px;
-        height: 252px;
+    height: 252px;
+    margin: 0% auto;
 }
 .contacts-logo {
     font-family: raleway, sans-serif;
@@ -167,6 +188,7 @@ body {
         font-size: 26px;
         letter-spacing: 0.03em;
         color: #2196f3;
+        margin: 0% auto;
 }
 .contacts-address {
     font-family: "Roboto", sans-serif;
@@ -175,6 +197,7 @@ body {
         line-height: 171%;
         letter-spacing: 0.03em;
         color: #fff;
+        margin: 0% auto;
 }
 .contacts-info {
     font-family: "Roboto", sans-serif;
@@ -183,6 +206,7 @@ font-weight: 400;
     line-height: 171%;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    margin: 0% auto;
 }
 .contacts-phone {
     font-family: "Roboto", sans-serif;
@@ -191,12 +215,19 @@ font-weight: 400;
     line-height: 171%;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    margin: 0% auto;
 }
 .gallery-image {
     width: 370px;
         height: 294px;
+        margin: 0% auto;
 }
 .team-foto {
     width: 270px;
         height: 260px;
+        margin: 0% auto;
+}
+.container {
+    width: 1600px;
+    margin: 0 auto;
 }
