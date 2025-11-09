@@ -1,11 +1,51 @@
 /* link styles */
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}   
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    background: #fff;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.header-nav {
+    display: flex;
+    gap: 50px;
+}
+.header-list {
+    display: flex;
+    gap: 50px;
+    margin-right: 330px;
+}
+.header-list_contacts {
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+}
 .header-logo {
-    font-family: raleway, sans-serif;
+    font-family: "Raleway", sans-serif;
         font-weight: 700;
         font-size: 26px;
         letter-spacing: 0.03em;
         color: #2196f3;
-        margin: 0% auto;
+        margin-right: 90px;
 }
 .header-link {
         font-family: "Roboto", sans-serif;
@@ -13,24 +53,24 @@
             font-size: 14px;
             letter-spacing: 0.02em;
             color: #212121;
-            margin: 0% auto;
 }
+
 .header-link:hover {
     color: #2196F3;
-    margin: 0% auto;
 }
+
 .email-info, .phone-info {
     font-family: "Roboto", sans-serif;
-        font-weight: 500;
-        font-size: 14px;
-        letter-spacing: 0.02em;
-        color: #757575;
-        margin: 0% auto;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #757575;
 }
+
 .email-info:hover, .phone-info:hover {
     color: #2196F3;
-    margin: 0% auto;
 }
+                      
 .hero-title {
     font-family: "Roboto", sans-serif;
         font-weight: 900;
@@ -41,45 +81,47 @@
         text-align: center;
         color: #fff;
         margin: 0% auto;
+        width: 696px;
 }
 .main-hero {
     background-color: #2F303A;
-    width: 1600px;
+    width: 1200px;
         height: 600px;
         margin: 0% auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 }
 .button {
     font-family: "Roboto", sans-serif;
     border-radius: 4px;
-        width: 216px;
-        height: 50px;
-            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-                background: #2196f3;
-                font-weight: 700;
-                    font-size: 16px;
-                    line-height: 187%;
-                    letter-spacing: 0.06em;
-                    text-align: center;
-                    color: #fff;
-                    margin: 0% auto;
+    width: 216px;
+    height: 50px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: #2196f3;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 187%;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: #fff;
 }
 .details {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
-        font-size: 14px;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: #212121;
-        margin: 0% auto;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
 }
 .details-item {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-        font-size: 14px;
-        line-height: 171%;
-        letter-spacing: 0.03em;
-        color: #757575;
-        margin: 0% auto;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.03em;
+    color: #757575;
 }
 .punctuality {
     font-family: "Roboto", sans-serif;
@@ -88,7 +130,6 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #212121;
-        margin: 0% auto;
 }
 .punctuality-item {
     font-family: "Roboto", sans-serif;
@@ -97,7 +138,6 @@
         line-height: 171%;
         letter-spacing: 0.03em;
         color: #757575;
-        margin: 0% auto;
 }
 .planning {
     font-family: "Roboto", sans-serif;
@@ -106,7 +146,6 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #212121;
-        margin: 0% auto;
 }
 .planning-item {
     font-family: "Roboto", sans-serif;
@@ -115,7 +154,6 @@
         line-height: 171%;
         letter-spacing: 0.03em;
         color: #757575;
-        margin: 0% auto;
 }
 .modern-technologies {
     font-family: "Roboto", sans-serif;
@@ -124,7 +162,6 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #212121;
-        margin: 0% auto;
 }
 .modern-technologies-item {
     font-family: "Roboto", sans-serif;
@@ -133,7 +170,6 @@
         line-height: 171%;
         letter-spacing: 0.03em;
         color: #757575;
-        margin: 0% auto;
 }
 .gallery-title {
     font-family: "Roboto", sans-serif;
@@ -142,7 +178,6 @@
         letter-spacing: 0.03em;
         text-align: center;
         color: #212121;
-        margin: 0% auto;
 }
 
 .team-title {
@@ -152,7 +187,6 @@
         letter-spacing: 0.03em;
         text-align: center;
         color: #212121;
-        margin: 0% auto;
 }
 .team-name {
     font-family: "Roboto", sans-serif;
@@ -161,7 +195,6 @@
         letter-spacing: 0.03em;
         text-align: center;
         color: #212121;
-        margin: 0% auto;
 }
 .team-role {
     font-family: "Roboto", sans-serif;
@@ -170,17 +203,11 @@
         letter-spacing: 0.03em;
         text-align: center;
         color: #757575;
-        margin: 0% auto;
 }
 
-body {
-    font-family: "Roboto", sans-serif;
-}
 .contacts {
     background: #2f303a;
-    width: 1600px;
     height: 252px;
-    margin: 0% auto;
 }
 .contacts-logo {
     font-family: raleway, sans-serif;
@@ -188,7 +215,6 @@ body {
         font-size: 26px;
         letter-spacing: 0.03em;
         color: #2196f3;
-        margin: 0% auto;
 }
 .contacts-address {
     font-family: "Roboto", sans-serif;
@@ -197,16 +223,14 @@ body {
         line-height: 171%;
         letter-spacing: 0.03em;
         color: #fff;
-        margin: 0% auto;
 }
 .contacts-info {
     font-family: "Roboto", sans-serif;
-font-weight: 400;
+    font-weight: 400;
     font-size: 14px;
     line-height: 171%;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-    margin: 0% auto;
 }
 .contacts-phone {
     font-family: "Roboto", sans-serif;
@@ -215,19 +239,11 @@ font-weight: 400;
     line-height: 171%;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-    margin: 0% auto;
 }
 .gallery-image {
     width: 370px;
-        height: 294px;
-        margin: 0% auto;
+    height: 294px;
 }
 .team-foto {
     width: 270px;
-        height: 260px;
-        margin: 0% auto;
-}
-.container {
-    width: 1600px;
-    margin: 0 auto;
 }
