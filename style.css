@@ -2,9 +2,15 @@
 
 .header {
     background: #fff;
-    height: 80px;
-    
+    height: 80px; 
 }
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
 .header-nav {
     display: flex;
     align-items: center;
@@ -12,13 +18,13 @@
 .header-list {
     display: flex;
     gap: 50px;
-    margin-right: 345px;
+    margin-right: 340px;
 }
 .header-list_contacts {
     display: flex;
-    justify-content: flex-end;
-    gap: 50px;
+    gap: 48px;
 }
+
 .header-logo {
     font-family: "Raleway", sans-serif;
         font-weight: 700;
@@ -241,10 +247,11 @@
     background: #2f303a;
     height: 252px;
 }
-.contacts  .container {
+.contacts .container {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
+    height: 100%;
 }
 .contacts-logo {
     font-family: "Raleway", sans-serif;
@@ -256,9 +263,8 @@
 }
 .contacts-list {
     display: flex;
-    gap: 10px;
+    gap: 18px;
     flex-direction: column;
-    margin-bottom: 20px;
 }
 .contacts-address {
     font-family: "Roboto", sans-serif;
@@ -290,3 +296,67 @@
     width: 270px;
     margin-bottom: 30px;
 }
+/* portfolio */
+.section-hero .container {
+    justify-self: center;
+    margin-bottom: 50px;
+}
+.hero-list {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-item a {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 73px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #757575;
+}   
+
+.hero-item a:hover {
+    color: #fff;
+    background-color: #2196F3;
+    border-radius: 4px;
+}
+.testimonials-list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 95px;
+}
+.testimonials-foto {
+    width: 370px;
+    height: 294px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.testimonials-foto img {
+    width: 100%;
+    height: auto;
+}
+
+.testimonials-item h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin: 15px 0;
+}
+
+.testimonials-item h2, p {
+    padding-left: 25px;
+}
+
+p {text-transform: capitalize;}
