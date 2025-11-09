@@ -96,6 +96,7 @@ a {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    margin-bottom: 95px;
 }
 
 .button {
@@ -113,6 +114,20 @@ a {
     text-align: center;
     color: #fff;
 }
+
+.section-schedule   {
+    margin-bottom: 95px;
+}
+
+.schedule-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.schedule-item {
+    width: 270px;
+}
+
 .details {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
@@ -177,6 +192,13 @@ a {
         letter-spacing: 0.03em;
         color: #757575;
 }
+
+.gallery-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 95px;
+}
+
 .gallery-title {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
@@ -184,6 +206,13 @@ a {
         letter-spacing: 0.03em;
         text-align: center;
         color: #212121;
+    margin-bottom: 50px;
+}
+
+.team {
+    display: flex;
+    margin-bottom: 95px;
+    flex-direction: column;
 }
 
 .team-title {
@@ -193,7 +222,15 @@ a {
         letter-spacing: 0.03em;
         text-align: center;
         color: #212121;
+    margin-bottom: 95px;
 }
+
+.team-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 95px;
+}
+
 .team-name {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -244,6 +281,7 @@ a {
     color: rgba(255, 255, 255, 0.6);
 }
 .gallery-image {
+    gap: 30px;
     width: 370px;
     height: 294px;
 }
