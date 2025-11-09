@@ -1,21 +1,22 @@
 /* link styles */
+*  {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: "Roboto", sans-serif;
 }
 
 ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
-}
-li {
-    margin: 0;
-    padding: 0;
-}   
+}  
 
 a {
     text-decoration: none;
 }   
+
 
 .container {
     max-width: 1200px;
@@ -31,12 +32,11 @@ a {
 }
 .header-nav {
     display: flex;
-    gap: 50px;
 }
 .header-list {
     display: flex;
     gap: 50px;
-    margin-right: 320px;
+    margin-right: 345px;
 }
 .header-list_contacts {
     display: flex;
@@ -84,8 +84,8 @@ a {
         text-transform: uppercase;
         text-align: center;
         color: #fff;
-        margin: 0% auto;
         width: 696px;
+        margin-bottom: 40px;
 }
 .main-hero {
     background-color: #2F303A;
@@ -97,7 +97,9 @@ a {
         justify-content: center;
         align-items: center;
 }
+
 .button {
+    border: none;
     font-family: "Roboto", sans-serif;
     border-radius: 4px;
     width: 216px;
