@@ -1,28 +1,4 @@
 /* link styles */
-*  {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: "Roboto", sans-serif;
-}
-
-ul {
-    list-style: none;
-}  
-
-a {
-    text-decoration: none;
-}   
-
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
 
 .header {
     background: #fff;
