@@ -8,6 +8,10 @@ ul {
     padding: 0;
     margin: 0;
 }
+li {
+    margin: 0;
+    padding: 0;
+}   
 
 a {
     text-decoration: none;
@@ -32,7 +36,7 @@ a {
 .header-list {
     display: flex;
     gap: 50px;
-    margin-right: 330px;
+    margin-right: 320px;
 }
 .header-list_contacts {
     display: flex;
@@ -220,7 +224,6 @@ a {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
         font-size: 14px;
-        line-height: 171%;
         letter-spacing: 0.03em;
         color: #fff;
 }
@@ -228,7 +231,6 @@ a {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 14px;
-    line-height: 171%;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
@@ -236,7 +238,6 @@ a {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 14px;
-    line-height: 171%;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
