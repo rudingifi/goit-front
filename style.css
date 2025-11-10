@@ -104,87 +104,36 @@
     color: #fff;
 }
 
-.section-schedule   {
+.section-features .container {
     margin-bottom: 95px;
 }
 
-.schedule-list {
+.features-list {
     display: flex;
     gap: 50px;
 }
 
-.schedule-item {
+.features-item {
     width: 270px;
 }
 
-.details {
+.features-title {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #212121;
+    margin-bottom: 20px;
 }
 
-.details-item {
+.features-description {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 171%;
     letter-spacing: 0.03em;
     color: #757575;
-}
-.punctuality {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-        font-size: 14px;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: #212121;
-}
-
-.punctuality-item {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-        font-size: 14px;
-        line-height: 171%;
-        letter-spacing: 0.03em;
-        color: #757575;
-}
-
-.planning {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-        font-size: 14px;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: #212121;
-}
-
-.planning-item {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-        font-size: 14px;
-        line-height: 171%;
-        letter-spacing: 0.03em;
-        color: #757575;
-}
-
-.modern-technologies {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-        font-size: 14px;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: #212121;
-}
-.modern-technologies-item {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-        font-size: 14px;
-        line-height: 171%;
-        letter-spacing: 0.03em;
-        color: #757575;
 }
 
 .gallery .container {
@@ -304,6 +253,7 @@
 .section-hero .container {
     justify-self: center;
     margin-bottom: 50px;
+    padding: 0;
 }
 .hero-list {
     display: flex;
@@ -323,6 +273,7 @@
     font-size: 14px;
     letter-spacing: 0.02em;
     color: #757575;
+    text-transform: capitalize;
 }   
 
 .hero-item a:hover {
@@ -356,11 +307,14 @@
     font-size: 20px;
     letter-spacing: 0.03em;
     color: #212121;
-    margin: 15px 0;
+    margin-bottom: 15px;
 }
 
-.testimonials-item h2, p {
+.testimonials-item h2, .testimonials-item p {
     padding-left: 25px;
 }
 
-p {text-transform: capitalize;}
+.testimonials-item p {
+    text-transform: capitalize;
+    color: #757575;
+}
