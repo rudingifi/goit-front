@@ -33,6 +33,10 @@
         color: #2196f3;
         margin-right: 90px;
 }
+.header-logo span {
+    color: #000;
+}
+
 .header-link {
         font-family: "Roboto", sans-serif;
             font-weight: 500;
