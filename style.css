@@ -80,7 +80,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 95px;
+    
 }
 
 .main-hero .container {
@@ -104,8 +104,9 @@
     color: #fff;
 }
 
-.section-features .container {
-    margin-bottom: 95px;
+.section-features {
+    padding-bottom: 95px;
+    padding-top: 95px;
 }
 
 .features-list {
