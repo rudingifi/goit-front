@@ -251,6 +251,10 @@
     margin-bottom: 30px;
 }
 /* portfolio */
+/* portfolio */
+/* portfolio */
+/* portfolio */
+/* portfolio */
 .section-hero .container {
     justify-self: center;
     margin-bottom: 50px;
@@ -318,4 +322,7 @@
 .testimonials-item p {
     text-transform: capitalize;
     color: #757575;
+}
+.section-testmonials {
+  flex-basis: calc((100% - 20px) / 3);
 }
