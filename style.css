@@ -126,8 +126,45 @@
     text-transform: uppercase;
     color: #212121;
     margin-bottom: 20px;
+    
 }
 
+.img1::before {
+    background-image: url("./img/details.png");
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-size: 50px;
+    margin-bottom: 20px;
+}
+.img2::before {
+    background-image: url(./img/chasi.png);
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-size: 50px;
+    margin-bottom: 20px;
+}
+.img3::before {
+    background-image: url(./img/noutbuk.png);
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-size: 50px;
+    margin-bottom: 20px;
+}
+.img4::before {
+    background-image: url(./img/inoplanetanin.png);
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-size: 50px;
+    margin-bottom: 20px;
+}
 .features-description {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
