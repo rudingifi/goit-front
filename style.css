@@ -135,7 +135,7 @@
 }
 
 .img1::before {
-    background-image: url("./img/antenna\ 1.png");
+    background-image: url("./img-svg/antenna.svg");
     content: "";
     display: block;
     width: 70px;
@@ -145,7 +145,7 @@
     margin-left: 100px;
 }
 .img2::before {
-    background-image: url("./img/clock\ 1\ \(1\).png");
+    background-image: url("./img-svg/clock.svg");
     content: "";
     display: block;
     width: 70px;
@@ -155,7 +155,7 @@
     margin-left: 100px;
 }
 .img3::before {
-    background-image: url("./img/diagram\ 1.png");
+    background-image: url("./img-svg/diagram.svg");
     content: "";
     display: block;
     width: 70px;
@@ -165,7 +165,7 @@
     margin-left: 100px;
 }
 .img4::before {
-    background-image: url("./img/astronaut\ 1.png");
+    background-image: url("./img-svg/astronaut.svg");
     content: "";
     display: block;
     width: 70px;
@@ -247,6 +247,46 @@
         text-align: center;
         color: #757575;
     margin-bottom: 30px;
+}
+
+.media-icon {
+    display: flex;
+    background: #AFB1B8;
+    width: 20px;
+    height: 20px;
+    margin-left: 44px;
+    gap: 33px;
+}
+
+.team-media:hover {
+    display: flex;
+    background-color: #2196F3;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin-left: 32px;
+}
+
+.clients-section .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 94px;
+}
+
+.clients-title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+        font-size: 36px;
+        letter-spacing: 0.03em;
+        text-align: center;
+        color: #212121;
+    margin-bottom: 50px;
+}
+
+.client-icon {
+    margin-top: 50px;
 }
 
 .contacts {
