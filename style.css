@@ -75,15 +75,18 @@
         
 }
 .main-hero {
-    background-image: url("./img/ludi.png");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url("./img/ludi.png");
     height: 600px;
     margin: 0% auto;
     display: flex;
     justify-content: center;
     align-items: center;
-   box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.75) inset;
--webkit-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.75) inset;
--moz-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.75) inset;
+    box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.75) inset;
+    -webkit-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.75) inset;
+    -moz-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.75) inset;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
 }
 
 .main-hero .container {
@@ -204,6 +207,7 @@
     margin-bottom: 50px;
 }
 
+
 .team .container{
     display: flex;
     margin-bottom: 95px;
@@ -285,8 +289,22 @@
     margin-bottom: 50px;
 }
 
-.client-icon {
-    margin-top: 50px;
+.clients-icon {
+    fill: #AFB1B8;
+    width: 106px;
+    height: 60px;
+}
+
+.clients-icon:hover {
+    fill: #2196F3;
+}
+
+.clients-list {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .contacts {
