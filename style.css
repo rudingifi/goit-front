@@ -137,45 +137,36 @@
     
 }
 
-.img1::before {
-    background-image: url("./img-svg/antenna.svg");
-    content: "";
-    display: block;
-    width: 70px;
-    height: 70px;
-    background-size: 70px;
+.features-box {
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
     margin-bottom: 30px;
-    margin-left: 100px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.img2::before {
-    background-image: url("./img-svg/clock.svg");
-    content: "";
-    display: block;
+
+.img1 {
+    fill: black;
     width: 70px;
     height: 70px;
-    background-size: 70px;
-    margin-bottom: 30px;
-    margin-left: 100px;
 }
-.img3::before {
-    background-image: url("./img-svg/diagram.svg");
-    content: "";
-    display: block;
+.img2 {
+    fill: black;
     width: 70px;
     height: 70px;
-    background-size: 70px;
-    margin-bottom: 30px;
-    margin-left: 100px;
 }
-.img4::before {
-    background-image: url("./img-svg/astronaut.svg");
-    content: "";
-    display: block;
+.img3 {
+    fill: black;
     width: 70px;
     height: 70px;
-    background-size: 70px;
-    margin-bottom: 30px;
-    margin-left: 100px;
+}
+.img4 {
+    fill: black;
+    width: 70px;
+    height: 70px;
 }
 .features-description {
     font-family: "Roboto", sans-serif;
@@ -207,6 +198,25 @@
     margin-bottom: 50px;
 }
 
+.gallery-item{
+    background-image: url(./img/ipad.jpg);
+    width: 370px;
+    height: 294px;
+    display: block;
+    position: relative;
+}
+
+.gallery-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 70px;
+    color: #fff;
+    background-color: rgba(47, 48, 58, 0.8);
+    position: absolute;
+    bottom: 0;
+}
 
 .team .container{
     display: flex;
