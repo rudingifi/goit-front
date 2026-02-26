@@ -49,7 +49,7 @@
       <section class="main-hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="button">Замовити послугу</button>
+          <button class="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
 
@@ -287,29 +287,29 @@
         </div>
       </section>
     </main>
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
       <div class="model">
-        <button class="model-button" type="button"><svg class="model-icon">
+        <button class="model-button" type="button" data-modal-close><svg class="model-icon">
           <use href="./img/symbol-defs.svg#icon-cross"></use>
       </svg></button>
       <h2 class="model-title">Залиште свої дані, ми вам передзвонимо</h2>
       <form class="model-form">
           <label class="model-label">ім'я
-            <input class="model-input" type="text">
+            <input class="model-input" type="text" required minlength="2" maxlength="15"/>
             <svg class="model-pic">
               <use href="./img/symbol-defs.svg#icon-user"></use>
             </svg>
           </label>
           
           <label class="model-label">телефон
-            <input class="model-input" type="text">
+            <input class="model-input" type="tel" pattern="^\+38\s0\d{2}\s\d{3}\s\d{2}\s\d{2}$" placeholder="+38 123 456 78 90"/>
             <svg class="model-pic">
               <use href="./img/symbol-defs.svg#icon-user"></use>
             </svg>
           </label>
 
           <label class="model-label">пошта
-            <input class="model-input" type="text">
+            <input class="model-input" type="email" required minlength="10"/>
             <svg class="model-pic">
               <use href="./img/symbol-defs.svg#icon-user"></use>
             </svg>
@@ -319,7 +319,7 @@
             </textarea>
           </label>
           <div class="model-box">
-            <input class="model-check" type="checkbox">
+            <input class="model-check" type="checkbox" required>
             <p class="model-text">Погоджуюся з розсилкою та приймаю</p>
             <a class="model-link" href="">Умови договору</a>
           </div>
@@ -327,5 +327,6 @@
       </form>
       </div>
     </div>
+    <script type="module" src="./modal.js"></script>
   </body>
 </html>
