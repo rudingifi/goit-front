@@ -43,6 +43,8 @@
             font-size: 14px;
             letter-spacing: 0.02em;
             color: #212121;
+            transition-property: color;
+            transition-duration: 0500ms;
 }
 
 .header-link:hover {
@@ -55,6 +57,8 @@
     font-size: 14px;
     letter-spacing: 0.02em;
     color: #757575;
+    transition-property: color;
+    transition-duration: 500ms;
 }
 
 .email-info:hover, .phone-info:hover {
@@ -269,12 +273,16 @@
     height: 20px;
     margin-left: 44px;
     margin-bottom: 42px;
+    transition-property: fill;
+    transition-duration: 350ms;
 }
 
 .socials:hover {
     background-color: #2196F3;
     fill: #ffffff;
     
+    transition-property: background-color;
+    transition-duration: 350ms;
 }
 
 .clients-section .container {
@@ -299,6 +307,9 @@
     fill: #AFB1B8;
     width: 106px;
     height: 60px;
+        transition-property: fill; 
+        transition-duration: 500ms;
+        
 }
 
 .clients-icon:hover {
@@ -357,6 +368,86 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
+
+.join {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 3%;
+    color: #fff;
+    margin-left: 300px;
+    position: relative;
+    bottom: 72px;
+    text-transform: uppercase;
+}
+
+.socials-list {
+    display: flex;
+    gap: 18px;
+    margin-left: 300px;
+    position: relative;
+    bottom: 52px;
+}
+
+.socials-item {
+    fill: #AFB1B8;
+}
+
+.socials-contacts {
+    fill: #AFB1B8;
+    width: 20px;
+    height: 20px;
+    transition-property: fill;
+    transition-duration: 350ms;
+    margin-top: 20px;
+}
+
+.socials-contacts:hover {
+    fill: #2196F3;
+}
+
+.subscribe {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 3%;
+    text-transform: uppercase;
+    color: #fff;
+    margin-left: 600px;
+    position: relative;
+    bottom: 132px;
+}
+
+.subscribe-input {
+    border-radius: 4px;
+    width: 300px;
+    height: 40px;
+    border: none;
+    padding-left: 12px;
+    transition-property: outline;
+    transition-duration: 350ms;
+    margin-left: 600px;
+    position: relative;
+    bottom: 112px;
+}
+
+.subscribe-button {
+    font-family: "Roboto", sans-serif;
+    border: none;
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    background: #2196f3;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 6%;
+    color: #fff;
+    margin-left: 970px;
+    position: relative;
+    bottom: 112px;
+}
+
 .gallery-image {
     gap: 30px;
     width: 370px;
@@ -413,6 +504,8 @@
     width: 20px;
     height: 20px;
     fill: gray;
+    transition-property: fill;
+    transition-duration: 350ms;
 }
 
 .model-button:hover {
@@ -449,6 +542,8 @@
     margin-bottom: 10px;
     border: none;
     padding-left: 42px;
+    transition-property: outline;
+    transition-duration: 350ms;
 }
 
 .model-input:hover,
@@ -470,8 +565,7 @@
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
     margin-top: 4px;
-    margin-bottom: 20px;
-
+margin-bottom: 20px;
 }
 
 .model-box {
