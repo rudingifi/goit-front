@@ -736,16 +736,16 @@ background: #fff;
     height: 100%;
     background: rgba(33, 150, 243, 0.9);
     font-family: "Roboto", sans-serif;
-font-weight: 400;
-font-size: 18px;
-line-height: 156%;
-letter-spacing: 0.03em;
-color: #fff;
-padding: 63px 24px;
-opacity: 0;
-transform: translateY(100%);
-transition-property: opacity, transform;
-transition-duration: 250ms;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156%;
+    letter-spacing: 0.03em;
+    color: #fff;
+    padding: 63px 24px;
+    opacity: 0;
+    transform: translateY(100%);
+    transition-property: opacity, transform;
+    transition-duration: 250ms;
 }
 
 .testimonials-info {
