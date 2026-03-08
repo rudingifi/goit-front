@@ -332,6 +332,18 @@
     display: flex;
     align-items: baseline;
 }
+
+.contacts .container:last-child {
+    align-items: flex-start;
+    gap: 93px;
+}
+
+.contacts .container:last-child > div:last-child {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+}
 .contacts-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -373,10 +385,8 @@
     font-size: 14px;
     letter-spacing: 3%;
     color: #fff;
-    
-    
-    bottom: 72px;
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 .socials-list {
@@ -384,21 +394,29 @@
     gap: 10px;
 }
 
-.socials-item {
-    fill: #AFB1B8;
+.socials-item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: background 350ms;
+}
+
+.socials-item a:hover {
+    background: #2196F3;
+}
+
+.socials-item:nth-child(2) a {
+    background: #2196F3;
 }
 
 .socials-contacts {
-    fill: #AFB1B8;
+    fill: #fff;
     width: 20px;
     height: 20px;
-    transition-property: fill;
-    transition-duration: 350ms;
-    margin-top: 20px;
-}
-
-.socials-contacts:hover {
-    fill: #2196F3;
 }
 
 .subscribe {
@@ -408,17 +426,25 @@
     letter-spacing: 3%;
     text-transform: uppercase;
     color: #fff;
-    
+    display: block;
+    margin-bottom: 20px;
 }
 
 .subscribe-input {
     border-radius: 4px;
-    width: 300px;
-    height: 40px;
-    border: none;
-    padding-left: 12px;
-    transition-property: outline;
-    transition-duration: 350ms;
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: transparent;
+    padding-left: 16px;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 350ms;
+}
+
+.subscribe-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .subscribe-button {
@@ -430,9 +456,25 @@
     background: #2196f3;
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
-    letter-spacing: 6%;
+    letter-spacing: 0.06em;
     color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.subscribe-button::after {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    flex-shrink: 0;
 }
 
 .gallery-image {
