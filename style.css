@@ -619,7 +619,7 @@
 .model-input {
     outline: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    width: 100%;
+    width: 448px;
     height: 40px;
     margin-top: 4px;
     margin-bottom: 10px;
@@ -636,7 +636,7 @@
 
 .model-comment {
     display: block;
-    width: 100%;
+    width: 448px;
     outline: 1px solid rgba(33, 33, 33, 0.2);
     border: rgba(33, 33, 33, 0.2);
     border-radius: 4px;
