@@ -391,16 +391,12 @@
     align-items: baseline;
 }
 
-.contacts .container:last-child {
-    align-items: flex-start;
-}
-
 .contacts .container:last-child > div:last-child {
-    display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 12px;
 }
+
 .contacts-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -409,11 +405,13 @@
     color: #2196f3;
     margin-bottom: 20px;
 }
+
 .contacts-list {
     display: flex;
     gap: 9px;
     flex-direction: column;
 }
+
 .contacts-address {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -421,6 +419,7 @@
     letter-spacing: 0.03em;
     color: #fff;
 }
+
 .contacts-info {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -428,12 +427,25 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
+
 .contacts-phone {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 14px;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+}
+
+.contacts-box {
+    display: flex;
+    flex-direction: column;
+    margin-right: 70px;
+}
+
+.socials-box {
+    display: flex;
+    flex-direction: column;
+    margin-right: 93px;
 }
 
 .join {
@@ -463,10 +475,6 @@
 }
 
 .socials-item a:hover {
-    background: #2196F3;
-}
-
-.socials-item:nth-child(2) a {
     background: #2196F3;
 }
 
