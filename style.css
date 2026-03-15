@@ -337,7 +337,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 94px;
+    padding-bottom: 94px;
 }
 
 .clients-title {
@@ -350,13 +350,21 @@
     margin-bottom: 50px;
 }
 
+.clients-item {
+    border: solid 1px #AFB1B8;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 32px;
+}
+
 .clients-icon {
     fill: #AFB1B8;
     width: 106px;
     height: 60px;
         transition-property: fill; 
-        transition-duration: 500ms;
-        
+        transition-duration: 350ms;
 }
 
 .clients-icon:hover {
@@ -365,10 +373,11 @@
 
 .clients-list {
     display: flex;
-    gap: 50px;
+    gap: 30px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    width: 1200px;
 }
 
 .contacts {
