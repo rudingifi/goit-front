@@ -45,16 +45,33 @@
 
 .header-link {
         font-family: "Roboto", sans-serif;
-            font-weight: 500;
-            font-size: 14px;
-            letter-spacing: 0.02em;
-            color: #212121;
-            transition-property: color;
-            transition-duration: 0250ms;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 0.02em;
+        color: #212121;
+        transition: color 250ms;
+        position: relative;
+}
+
+.header-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -31px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #2196F3;
+    opacity: 0;
+    transition: opacity 250ms;
 }
 
 .header-link:hover {
     color: #2196F3;
+}
+
+.header-link:hover::after {
+    opacity: 1;
 }
 
 .email-info, .phone-info {
