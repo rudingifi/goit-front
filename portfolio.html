@@ -4,9 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio</title>
-    <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./normalise.css" />
-    <link rel="stylesheet" href="./style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
@@ -17,33 +15,45 @@
     
     <header class="header">
       <div class="container">
-      <p class="header-logo">Web<span>Studio</span></p>
-      <nav class="header-nav">
-        <ul class="header-list">
-          <li class="header-item">
-            <a class="header-link" href="index.html">WebStudio</a>
-          </li>
-          <li class="header-item"><a class="header-link" href="">Студія</a></li>
-          <li class="header-item">
-            <a class="header-link" href="./portfolio.html">Портфоліо</a>
-          </li>
-        </ul>
-        <ul class="header-list_contacts">
-          <li class="header-item">
-            <a class="email-info" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="header-item">
-            <a class="phone-info" href="tel:+380961111111">+38 096 111 11 11</a>
-          </li>
-        </ul>
-      </nav>
+        <!-- <p class="animate__animated animate__bounce">tesst xoxoox</p> -->
+        <p class="header-logo">Web<span>Studio</span></p>
+        <nav class="header-nav">
+          <ul class="header-list">
+            <li class="header-item">
+              <a class="header-link" href="./index.html">Студія</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link" href="">Контакти</a>
+            </li>
+          </ul>
+          <ul class="header-contacts">
+            <li class="header-item">
+              <svg class="header-eicon">
+                <use href="./img/symbol-defs.svg#icon-mail"></use>
+              </svg>
+              <a class="header-email" href="mailto:info@devstudio.com">
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="header-item">
+              <svg class="header-picon">
+                <use href="./img/symbol-defs.svg#icon-smartphone"></use>
+              </svg>
+
+              <a class="header-phone" href="tel:+380961111111">
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main class="main">
       <!-- hero section -->
-      <section class="section-hero">
+      <section class="p-hero">
         <div class="container">
           <ul class="hero-list">
             <li class="hero-item"><a href="">усі</a></li>
@@ -196,8 +206,9 @@
         </div>
       </section>
       <!--register-->
-           <section class="contacts">
-          <div class="container">
+    </main>
+    <footer class="contacts">
+        <div class="container">
           <div class="contacts-box">
           <p class="contacts-logo">WebStudio</p>
           <ul class="contacts-list">
@@ -233,8 +244,7 @@
             </form>
           </div>
         </div>
-      </section>
-    </main>
-    </div>
+      </footer>
+    
   </body>
 </html>

@@ -1,0 +1,109 @@
+.header {
+    background: #fff;
+    height: 80px; 
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+.header-list {
+    display: flex;
+    gap: 50px;
+    margin-right: 315px;
+}
+.header-contacts {
+    display: flex;
+    gap: 30px;
+}
+
+.header-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-logo {
+    font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+        letter-spacing: 0.03em;
+        color: #2196f3;
+        margin-right: 90px;
+}
+.header-logo span {
+    color: #000;
+}
+
+.header-link {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 0.02em;
+        color: #212121;
+        transition: color 250ms;
+        position: relative;
+}
+
+.header-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -31px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #2196F3;
+    opacity: 0;
+    transition: opacity 250ms;
+}
+
+.header-link:hover {
+    color: #2196F3;
+}
+
+.header-link:hover::after {
+    opacity: 1;
+}
+
+
+
+.header-email, .header-phone {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #757575;
+    transition-property: color;
+    transition-duration: 500ms;
+}
+
+.header-email:hover, .header-phone:hover {
+    color: #2196F3;
+}
+
+.header-eicon {
+    display: flex;
+    flex-direction: column;
+    fill: #757575;
+    width: 16px;
+    height: 12px;
+    transition-property: fill;
+    transition-duration: 250ms;
+}
+
+.header-picon {
+    display: flex;
+    flex-direction: column;
+    fill: #757575;
+    width: 10px;
+    height: 16px;
+    transition-property: fill;
+    transition-duration: 250ms;
+}
