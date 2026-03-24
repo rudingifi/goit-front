@@ -34,6 +34,7 @@
     color: #212121;
     transition-property: color, background-color, box-shadow;
     transition-duration: 250ms;
+    cubic-bezier: (0.4, 0, 0.2, 1);
 }   
 
 .hero-item a:hover {
