@@ -27,37 +27,13 @@ a {
   background: #fff;
   height: 80px;
 }
-
 .header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100%;
 }
-
-.header-nav {
-  display: flex;
-  align-items: center;
-}
-
-.header-list {
-  display: flex;
-  gap: 50px;
-  margin-right: 315px;
-}
-
-.header-contacts {
-  display: flex;
-  gap: 30px;
-}
-
-.header-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.header-logo {
+.header__webstudio {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -65,12 +41,24 @@ a {
   color: #2196f3;
   margin-right: 90px;
 }
-
-.header-logo span {
+.header__webstudio span {
   color: #000;
 }
-
-.header-link {
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+.header__list {
+  display: flex;
+  gap: 50px;
+  margin-right: 315px;
+}
+.header__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header__link {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -79,8 +67,7 @@ a {
   transition: color 250ms;
   position: relative;
 }
-
-.header-link::after {
+.header__link::after {
   content: "";
   position: absolute;
   left: 0;
@@ -92,16 +79,17 @@ a {
   opacity: 0;
   transition: opacity 250ms;
 }
-
-.header-link:hover {
+.header__link:hover {
   color: #2196F3;
 }
-
-.header-link:hover::after {
+.header__link:hover::after {
   opacity: 1;
 }
-
-.header-email, .header-phone {
+.header__contacts {
+  display: flex;
+  gap: 30px;
+}
+.header__info {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -110,12 +98,10 @@ a {
   transition-property: color;
   transition-duration: 500ms;
 }
-
-.header-email:hover, .header-phone:hover {
+.header__info:hover {
   color: #2196F3;
 }
-
-.header-eicon {
+.header__eicon {
   display: flex;
   flex-direction: column;
   fill: #757575;
@@ -124,8 +110,7 @@ a {
   transition-property: fill;
   transition-duration: 250ms;
 }
-
-.header-picon {
+.header__picon {
   display: flex;
   flex-direction: column;
   fill: #757575;

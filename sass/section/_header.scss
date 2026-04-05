@@ -1,47 +1,47 @@
 .header {
     background: #fff;
     height: 80px; 
-}
-.header .container {
+
+& .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
 }
 
-.header-nav {
+
+&__webstudio {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    color: #2196f3;
+    margin-right: 90px;
+}
+
+&__webstudio span {
+    color: #000;
+}
+
+&__nav {
     display: flex;
     align-items: center;
 }
-.header-list {
+
+
+&__list {
     display: flex;
     gap: 50px;
     margin-right: 315px;
 }
-.header-contacts {
-    display: flex;
-    gap: 30px;
-}
 
-.header-item {
+&__item {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.header-logo {
-    font-family: "Raleway", sans-serif;
-        font-weight: 700;
-        font-size: 26px;
-        letter-spacing: 0.03em;
-        color: #2196f3;
-        margin-right: 90px;
-}
-.header-logo span {
-    color: #000;
-}
-
-.header-link {
+&__link {
         font-family: "Roboto", sans-serif;
         font-weight: 500;
         font-size: 14px;
@@ -49,9 +49,8 @@
         color: #212121;
         transition: color 250ms;
         position: relative;
-}
 
-.header-link::after {
+        &::after {
     content: "";
     position: absolute;
     left: 0;
@@ -64,17 +63,28 @@
     transition: opacity 250ms;
 }
 
-.header-link:hover {
+&:hover {
     color: #2196F3;
 }
 
-.header-link:hover::after {
+&:hover::after {
     opacity: 1;
+}
+
 }
 
 
 
-.header-email, .header-phone {
+
+
+
+
+&__contacts {
+    display: flex;
+    gap: 30px;
+}
+
+&__info {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 14px;
@@ -82,13 +92,14 @@
     color: #757575;
     transition-property: color;
     transition-duration: 500ms;
-}
-
-.header-email:hover, .header-phone:hover {
+    &:hover {
     color: #2196F3;
 }
+}
 
-.header-eicon {
+
+
+&__eicon {
     display: flex;
     flex-direction: column;
     fill: #757575;
@@ -98,7 +109,7 @@
     transition-duration: 250ms;
 }
 
-.header-picon {
+&__picon {
     display: flex;
     flex-direction: column;
     fill: #757575;
@@ -107,3 +118,30 @@
     transition-property: fill;
     transition-duration: 250ms;
 }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
