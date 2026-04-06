@@ -1,20 +1,20 @@
-.p-hero {
+.phero {
     padding-top: 94px;
     padding-bottom: 50px;
-}
 
-.p-hero .container {
+    & .container {
     justify-self: center;
     padding: 0;
-}
-.hero-list {
+    }
+
+    &__list {
     display: flex;
     gap: 8px;
     justify-content: center;
     align-items: center;
-}
+    }
 
-.hero-item a {
+    &__link {
     font-family: "Roboto", sans-serif;
     /* display: flex;
     justify-content: center;
@@ -34,14 +34,20 @@
     color: #212121;
     transition-property: color, background-color, box-shadow;
     transition-duration: 250ms;
-    cubic-bezier: (0.4, 0, 0.2, 1);
-}   
-
-.hero-item a:hover {
+    // cubic-bezier: (0.4, 0, 0.2, 1);
+    &:hover {
     color: #fff;
     background-color: #2196F3;
     border-radius: 4px;
     box-shadow: 0px 2px 2px 0px #0000001F;
     box-shadow: 0px 1px 2px 0px #00000014;
     box-shadow: 0px 3px 1px 0px #0000001A;
+    }
+    }
 }
+
+
+
+
+   
+

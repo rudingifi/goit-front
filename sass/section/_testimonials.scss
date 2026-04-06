@@ -1,74 +1,49 @@
-.testimonials-container {
+.testimonials {
+    padding-bottom: 94px;
+
+    &__list {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.testimonials-list {
-    display: flex;
-    /* flex-basis: calc((100% - 60px) / 3); */
+    // flex-basis: calc((100% - 60px) / 3); 
     gap: 27px;
-    
-    
     flex-wrap: wrap;
-    margin-bottom: 95px;
-}
-.testimonials-foto {
-    width: 370px;
-    height: 294px;
-    overflow: hidden;
-    
-}
+    }
 
-.testimonials-foto img {
-    width: 100%;
-    height: auto;
-}
-
-.testimonials-item {
+    &__item {
     border: solid 1px #EEEEEE;
     position: relative;
     border-radius: 4px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-}
-
-.testimonials-item h2 {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    letter-spacing: 0.03em;
-    color: #212121;
-    margin-bottom: 15px;
-}
-
-
-
-.testimonials-item p {
-    text-transform: capitalize;
-    color: #757575;
     
-
-}
-
-.testimonials-item:hover {
+    &:hover {
     box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-background: #fff;
-.testemonial-text {
+    background: #fff;
+    .testimonials__text {
     opacity: 1;
     transform: translateY(0);
     color: #fff;
-}
-}
+    }
+    }
+    }
 
-
-
-.testimonials-box {
+    &__box {
     position: relative;
     overflow: hidden;
-}
+    }
 
-.testemonial-text {
+    &__foto {
+    width: 370px;
+    height: 294px;
+    overflow: hidden;
+
+    .testemonials img {
+    width: 100%;
+    height: auto;
+    }
+    }
+
+    &__text {
     position: absolute;
     top: 0;
     left: 0;
@@ -86,8 +61,46 @@ background: #fff;
     transform: translateY(100%);
     transition-property: opacity, transform;
     transition-duration: 250ms;
+    }
+
+    &__info {
+    padding: 20px 24px;
+    }
+
+    &__name {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 15px;
+    }
+
+    &__role {
+    text-transform: capitalize;
+    color: #757575;
+    }
 }
 
-.testimonials-info {
-    padding: 20px 24px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
