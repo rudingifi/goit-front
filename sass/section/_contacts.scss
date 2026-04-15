@@ -1,5 +1,7 @@
+@use"../base/variables" as *;
+
 .contacts {
-    background: #2f303a;
+    background: $footer-bg;
     padding-top: 60px;
     padding-bottom: 60px;
 
@@ -25,7 +27,7 @@
     font-weight: 700;
     font-size: 26px;
     letter-spacing: 0.03em;
-    color: #2196f3;
+    color: $accent-color;
     margin-bottom: 20px;
     }
 
@@ -40,7 +42,7 @@
     font-weight: 400;
     font-size: 14px;
     letter-spacing: 0.03em;
-    color: #fff;
+    color: $main-color;
     }
 
     &__info {
@@ -70,7 +72,7 @@
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 3%;
-    color: #fff;
+    color: $main-color;
     text-transform: uppercase;
     margin-bottom: 20px;
     }
@@ -95,7 +97,7 @@
     }
 
     &__contacts {
-    fill: #fff;
+    fill: $main-color;
     width: 20px;
     height: 20px;
     }
@@ -109,7 +111,7 @@
     font-size: 14px;
     letter-spacing: 3%;
     text-transform: uppercase;
-    color: #fff;
+    color: $main-color;
     display: block;
     margin-bottom: 20px;
     }
@@ -127,7 +129,7 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     background: transparent;
     padding-left: 16px;
-    color: #fff;
+    color: $main-color;
     font-size: 16px;
     outline: none;
     transition: border-color 350ms;
@@ -143,11 +145,11 @@
     border-radius: 4px;
     width: 200px;
     height: 50px;
-    background: #2196f3;
+    background: $accent-color;
     font-weight: 700;
     font-size: 16px;
     letter-spacing: 0.06em;
-    color: #fff;
+    color: $main-color;
     display: inline-flex;
     align-items: center;
     justify-content: center;

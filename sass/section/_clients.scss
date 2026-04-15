@@ -1,3 +1,5 @@
+@use"../base/variables" as *;
+
 .clients {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -16,7 +18,7 @@
         font-size: 36px;
         letter-spacing: 0.03em;
         text-align: center;
-        color: #212121;
+        color: $title-color;
     margin-bottom: 50px;
     }
 
@@ -30,7 +32,7 @@
     }
 
     &__item {
-    border: solid 1px #AFB1B8;
+    border: solid 1px $client-border;
     border-radius: 4px;
     display: flex;
     align-items: center;
@@ -39,18 +41,18 @@
     transition-property: border;
     transition-duration: 350ms;
     &:hover {
-    border: solid 1px #2196F3;
+    border: solid 1px $accent-color;
     }
     }
 
     &__icon {
-    fill: #AFB1B8;
+    fill: $client-border;
     width: 106px;
     height: 60px;
         transition-property: fill; 
         transition-duration: 350ms;
         &:hover {
-    fill: #2196F3;
+    fill: $accent-color;
     
     }
     }

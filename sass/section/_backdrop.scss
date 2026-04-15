@@ -1,5 +1,7 @@
+@use"../base/variables" as *;
+
 .backdrop {
-    background-color: #0c070879;
+    background-color: $modal-color;
     position: fixed;
     top: 0;
     left: 0;
@@ -15,7 +17,7 @@
 .model {
     width: 528px;
     height: 581px;
-    background-color: #fff;
+    background-color: $main-color;
     border-radius: 4px;
     position: absolute;
     top: 50%;
@@ -39,7 +41,7 @@
     background-color: transparent;
     &:hover {
     .model__icon {
-        fill: #2196F3;
+        fill: $accent-color;
     }
     }
     }
@@ -60,7 +62,7 @@
     font-size: 18px;
     letter-spacing: 0.03em;
     text-align: center;
-    color: #212121;
+    color: $title-color;
     margin-bottom: 12px;
     }
 
@@ -68,7 +70,7 @@
     font-weight: 400;
     font-size: 12px;
     letter-spacing: 0.01em;
-    color: #757575;
+    color: $text-color;
     display: inline-block;
     margin-bottom: 4px;
     position: relative;
@@ -87,13 +89,13 @@
     transition-duration: 350ms;
     &:hover,
     &:focus {
-    outline: 1px solid #2196F3;
+    outline: 1px solid $accent-color;
     }
     }
 
     &__input:hover + &__pic,
     &__input:focus + &__pic {
-    fill: #2196F3;
+    fill: $accent-color;
     }
 
     &__pic {
@@ -138,7 +140,7 @@
     font-size: 14px;
     line-height: 171%;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: $text-color;
     margin-left: 9px;
     margin-right: 4px;
     }
@@ -148,7 +150,7 @@
     font-size: 14px;
     line-height: 171%;
     letter-spacing: 0.03em;
-    color: #2196F3;
+    color: $accent-color;
     text-decoration: underline;
     text-decoration-skip-ink: none;
     }
@@ -158,13 +160,13 @@
     font-size: 16px;
     line-height: 188%;
     letter-spacing: 0.06em;
-    color: #fff;
+    color: $main-color;
     text-align: center;
     border-radius: 4px;
     width: 200px;
     height: 50px;
     box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.15);
-    background: #2196f3;
+    background: $accent-color;
     display: block;
     margin: 0 auto;
     margin-top: 30px;

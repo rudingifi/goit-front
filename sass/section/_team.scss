@@ -1,5 +1,7 @@
+@use"../base/variables" as *;
+
 .team {
-    background-color: #F5F4FA;
+    background-color: $team-bg;
     padding-bottom: 94px;
     padding-top: 94px;
 
@@ -15,7 +17,7 @@
         font-size: 36px;
         letter-spacing: 0.03em;
         text-align: center;
-        color: #212121;
+        color: $title-color;
     margin-bottom: 95px;
     }
 
@@ -28,7 +30,7 @@
         border-bottom-left-radius: 4px;
         border-bottom-right-radius: 4px;
         box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
-        background: #fff;
+        background: $main-color;
     }
 
     &__foto { 
@@ -42,7 +44,7 @@
         font-size: 16px;
         letter-spacing: 0.03em;
         text-align: center;
-        color: #212121;
+        color: $title-color;
     margin-bottom: 10px;
     }
 
@@ -52,7 +54,7 @@
         font-size: 16px;
         letter-spacing: 0.03em;
         text-align: center;
-        color: #757575;
+        color: $text-color;
     margin-bottom: 30px;
     }
 
@@ -74,15 +76,15 @@
     transition-duration: 250ms;
 
     &:hover {
-    background-color: #2196F3;
+    background-color: $accent-color;
     .team__socials {
-        fill: #fff;
+        fill: $main-color;
     }
 }
     }
 
     &__socials {
-    fill: #AFB1B8;
+    fill: $client-border;
     width: 20px;
     height: 20px;
     transition-property: fill;

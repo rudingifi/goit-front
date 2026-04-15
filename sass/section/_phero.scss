@@ -1,3 +1,5 @@
+@use"../base/variables" as *;
+
 .phero {
     padding-top: 94px;
     padding-bottom: 50px;
@@ -22,8 +24,8 @@
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.02em; */
-    color: #212121;
-    background-color: #F5F4FA;
+    color: $title-color;
+    background-color: $team-bg;
     text-transform: capitalize;
     padding: 6px 22px;
     font-weight: 500;
@@ -31,13 +33,13 @@
     line-height: 163%;
     letter-spacing: 0.03em;
     text-align: center;
-    color: #212121;
+    color: $title-color;
     transition-property: color, background-color, box-shadow;
     transition-duration: 250ms;
     // cubic-bezier: (0.4, 0, 0.2, 1);
     &:hover {
-    color: #fff;
-    background-color: #2196F3;
+    color: $main-color;
+    background-color: $accent-color;
     border-radius: 4px;
     box-shadow: 0px 2px 2px 0px #0000001F;
     box-shadow: 0px 1px 2px 0px #00000014;
