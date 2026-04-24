@@ -1,7 +1,11 @@
 @use"../base/variables" as *;
 
+@use"../utils/placeholder";
+
 .testimonials {
-    padding-bottom: 94px;
+    // padding-bottom: 94px;
+
+    @extend %testimonials-sect;
 
     &__list {
     display: flex;
@@ -74,7 +78,7 @@
     font-weight: 700;
     font-size: 20px;
     letter-spacing: 0.03em;
-    color: $titlw-color;
+    color: $title-color;
     margin-bottom: 15px;
     }
 

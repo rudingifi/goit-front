@@ -1,9 +1,11 @@
 @use"../base/variables" as *;
 
-.clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
+@use"../utils/placeholder";
 
+.clients {
+    // padding-top: 94px;
+    // padding-bottom: 94px;
+    @extend %indents-on-sections;
     & .container {
     display: flex;
     justify-content: center;

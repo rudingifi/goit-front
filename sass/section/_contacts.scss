@@ -1,9 +1,13 @@
 @use"../base/variables" as *;
 
+@use"../utils/placeholder";
+
 .contacts {
     background: $footer-bg;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    // padding-top: 60px;
+    // padding-bottom: 60px;
+
+    @extend %contakti-futer;
 
     & .container {
     display: flex;

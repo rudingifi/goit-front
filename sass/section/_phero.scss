@@ -1,8 +1,11 @@
 @use"../base/variables" as *;
 
+@use"../utils/placeholder";
+
 .phero {
-    padding-top: 94px;
-    padding-bottom: 50px;
+    // padding-top: 94px;
+    // padding-bottom: 50px;
+    @extend %indents-on-sections;
 
     & .container {
     justify-self: center;

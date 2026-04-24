@@ -1,9 +1,11 @@
 @use"../base/variables" as *;
 
-.features {
-    padding-bottom: 95px;
-    padding-top: 95px;
+@use"../utils/placeholder";
 
+.features {
+    // padding-bottom: 95px;
+    // padding-top: 95px;
+    @extend %indents-on-sections ;
 
     &__list {
     display: flex;

@@ -1,8 +1,11 @@
 @use"../base/variables" as *;
 
+@use"../utils/placeholder";
+
 .header {
     background: $main-color;
-    height: 80px; 
+    // height: 80px;
+    @extend %heder-nuxz;
 
 & .container {
     display: flex;

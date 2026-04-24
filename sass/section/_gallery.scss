@@ -1,8 +1,11 @@
 @use"../base/variables" as *;
 
+@use"../utils/placeholder";
+
 .gallery {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    // padding-top: 94px;
+    // padding-bottom: 94px;
+    @extend %indents-on-sections;
 
     & .container {
     flex-direction: column;
