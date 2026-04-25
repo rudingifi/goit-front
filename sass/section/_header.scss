@@ -7,6 +7,14 @@
     // height: 80px;
     @extend %heder-nuxz;
 
+    @media screen and (min-width: 768px) {
+        padding: 21px 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 25px 0;
+    }
+
 & .container {
     display: flex;
     justify-content: space-between;
@@ -18,10 +26,23 @@
 &__webstudio {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
     letter-spacing: 0.03em;
     color: $accent-color;
-    margin-right: 90px;
+    margin-right: auto;
+
+    
+
+    @media screen and (min-width: 768px) {
+        
+        margin-right: 87px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+        letter-spacing: 0.78px;
+        margin-right: 93px;
+    }
 }
 
 &__webstudio span {

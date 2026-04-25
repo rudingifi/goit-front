@@ -28,10 +28,22 @@ body {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 a {
   text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+h1, h2, h3, p {
+  margin: 0;
 }
 
 .container {
@@ -39,10 +51,36 @@ a {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+  outline: 1px solid red;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .header {
   background: #FFF;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 21px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 25px 0;
+  }
 }
 .header .container {
   display: flex;
@@ -53,10 +91,22 @@ a {
 .header__webstudio {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   letter-spacing: 0.03em;
   color: #2196F3;
-  margin-right: 90px;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .header__webstudio {
+    margin-right: 87px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__webstudio {
+    font-size: 26px;
+    letter-spacing: 0.78px;
+    margin-right: 93px;
+  }
 }
 .header__webstudio span {
   color: #000;
