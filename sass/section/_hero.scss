@@ -2,7 +2,8 @@
 
 .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url("../img/ludi.png");
-    height: 600px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     // @extend %indents-on-sections;
     margin: 0% auto;
     display: flex;
@@ -15,29 +16,35 @@
      background-size: cover;
      background-position: center;
 
+     @media screen and (min-width: 768px) {
+        padding-bottom: 200px;
+        padding-top: 200px;
+    }
+
 
      &__title {
     font-family: "Roboto", sans-serif;
         font-weight: 900;
-        font-size: 44px;
+        font-size: 26px;
         line-height: 136%;
         letter-spacing: 0.06em;
         text-transform: uppercase;
         text-align: center;
         color: $main-color;
-        width: 696px;
-        margin-bottom: 40px;
+        width: 360px;
+        margin-bottom: 30px;
         
+        @media screen and (min-width: 768px) {
+            width: 696px;
+            font-size: 44px;
+    }
     }
     &__button {
     border: none;
     font-family: "Roboto", sans-serif;
     border-radius: 4px;
-    width: 216px;
+    width: 200px;
     height: 50px;
-    box-shadow: 0px 0px 49px 0px rgba(0,240,255,0.74) inset;
--webkit-box-shadow: 0px 0px 49px 0px rgba(0,240,255,0.74) inset;
--moz-box-shadow: 0px 0px 49px 0px rgba(0,240,255,0.74) inset;
     background: $accent-color;
     font-weight: 700;
     font-size: 16px;

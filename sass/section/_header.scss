@@ -17,7 +17,7 @@
 
 & .container {
     display: flex;
-    justify-content: space-between;
+    
     align-items: center;
     height: 100%;
 }
@@ -52,13 +52,18 @@
 &__nav {
     display: flex;
     align-items: center;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
 }
 
 
 &__list {
     display: flex;
     gap: 50px;
-    margin-right: 315px;
+    // margin-right: 315px;
 }
 
 &__item {
@@ -106,8 +111,22 @@
 
 
 &__contacts {
-    display: flex;
-    gap: 30px;
+    // display: flex;
+    gap: 10px;
+    margin-left: auto;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        gap: 30px;
+        flex-direction: row;
+    }
+
 }
 
 &__info {
@@ -147,7 +166,20 @@
 
 }
 
+.knopka {
+    border: none;
+    display: none;
+    background-color: #fff;
+        
+    @media screen and (max-width: 768px) {
+        display: block;
+    }
 
+    &__icon {
+        width: 40px;
+        height: 40px;
+    }
+}
 
 
 

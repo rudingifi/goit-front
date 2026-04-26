@@ -1,4 +1,4 @@
-.phero, .clients, .team, .gallery, .features {
+.phero, .clients, .team, .gallery {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -13,7 +13,7 @@
 }
 
 .header {
-  height: 80px;
+  padding: 10px 0;
 }
 
 * {
@@ -84,7 +84,6 @@ h1, h2, h3, p {
 }
 .header .container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   height: 100%;
 }
@@ -114,11 +113,16 @@ h1, h2, h3, p {
 .header__nav {
   display: flex;
   align-items: center;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header__nav {
+    display: block;
+  }
 }
 .header__list {
   display: flex;
   gap: 50px;
-  margin-right: 315px;
 }
 .header__item {
   display: flex;
@@ -153,8 +157,22 @@ h1, h2, h3, p {
   opacity: 1;
 }
 .header__contacts {
-  display: flex;
-  gap: 30px;
+  gap: 10px;
+  margin-left: auto;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header__contacts {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__contacts {
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+  }
 }
 .header__info {
   font-family: "Roboto", sans-serif;
@@ -187,9 +205,25 @@ h1, h2, h3, p {
   transition-duration: 250ms;
 }
 
+.knopka {
+  border: none;
+  display: none;
+  background-color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .knopka {
+    display: block;
+  }
+}
+.knopka__icon {
+  width: 40px;
+  height: 40px;
+}
+
 .hero {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/ludi.png");
-  height: 600px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin: 0% auto;
   display: flex;
   justify-content: center;
@@ -201,27 +235,36 @@ h1, h2, h3, p {
   background-size: cover;
   background-position: center;
 }
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-bottom: 200px;
+    padding-top: 200px;
+  }
+}
 .hero__title {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 136%;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
   color: #FFF;
-  width: 696px;
-  margin-bottom: 40px;
+  width: 360px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    width: 696px;
+    font-size: 44px;
+  }
 }
 .hero__button {
   border: none;
   font-family: "Roboto", sans-serif;
   border-radius: 4px;
-  width: 216px;
+  width: 200px;
   height: 50px;
-  box-shadow: 0px 0px 49px 0px rgba(0, 240, 255, 0.74) inset;
-  -webkit-box-shadow: 0px 0px 49px 0px rgba(0, 240, 255, 0.74) inset;
-  -moz-box-shadow: 0px 0px 49px 0px rgba(0, 240, 255, 0.74) inset;
   background: #2196F3;
   font-weight: 700;
   font-size: 16px;
@@ -235,15 +278,50 @@ h1, h2, h3, p {
   align-items: center;
 }
 
+.features {
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 768px) {
+  .features {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+}
 .features__list {
   display: flex;
+  flex-direction: column;
   gap: 30px;
 }
+@media screen and (min-width: 768px) {
+  .features__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 .features__item {
-  width: 270px;
+  width: 450px;
+  height: 226px;
+}
+@media screen and (min-width: 768px) {
+  .features__item {
+    width: 354px;
+    height: 224px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__item {
+    width: 270px;
+    height: 248px;
+  }
 }
 .features__box {
-  width: 270px;
+  width: 450px;
   height: 120px;
   background-color: #F5F4FA;
   margin-bottom: 30px;
@@ -251,6 +329,18 @@ h1, h2, h3, p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .features__box {
+    width: 354px;
+    height: 120px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__box {
+    width: 270px;
+    height: 120px;
+  }
 }
 .features__img1 {
   fill: #212121;
@@ -279,7 +369,8 @@ h1, h2, h3, p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 .features__description {
   font-family: "Roboto", sans-serif;

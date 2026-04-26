@@ -3,21 +3,48 @@
 @use"../utils/placeholder";
 
 .features {
-    // padding-bottom: 95px;
-    // padding-top: 95px;
-    @extend %indents-on-sections ;
+    padding-bottom: 60px;
+    padding-top: 60px;
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 94px;
+        padding-top: 94px;
+    }
+    
 
     &__list {
     display: flex;
+    flex-direction: column;
     gap: 30px;
+
+    @media screen and (min-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (min-width: 1200px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
     }
 
     &__item {
-    width: 270px;
+    width: 450px;
+    height: 226px;
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+        height: 224px;
+        
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+        height: 248px;
+    }
     }
 
     &__box {
-    width: 270px;
+    width: 450px;
     height: 120px;
     background-color: $team-bg;
     margin-bottom: 30px;
@@ -25,6 +52,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+        height: 120px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+        height: 120px;
+    }
+    
     }
 
     &__img1 {
@@ -58,7 +96,8 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $title-color;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    text-align: center;
     
     }
 
