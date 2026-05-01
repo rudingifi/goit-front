@@ -3,9 +3,10 @@
 @use"../utils/placeholder";
 
 .clients {
-    // padding-top: 94px;
-    // padding-bottom: 94px;
-    @extend %indents-on-sections;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+
     & .container {
     display: flex;
     justify-content: center;
@@ -17,11 +18,11 @@
     &__title {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
-        font-size: 36px;
+        font-size: 28px;
         letter-spacing: 0.03em;
         text-align: center;
         color: $title-color;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     }
 
     &__list {

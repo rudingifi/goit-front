@@ -1,4 +1,4 @@
-.phero, .clients {
+.phero {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -562,6 +562,10 @@ h1, h2, h3, p {
   transition-duration: 350ms;
 }
 
+.clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .clients .container {
   display: flex;
   justify-content: center;
@@ -572,11 +576,11 @@ h1, h2, h3, p {
 .clients__title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   letter-spacing: 0.03em;
   text-align: center;
   color: #212121;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .clients__list {
   display: flex;
