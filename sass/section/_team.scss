@@ -4,39 +4,45 @@
 
 .team {
     background-color: $team-bg;
-    // padding-bottom: 94px;
-    // padding-top: 94px;
-    @extend %indents-on-sections;
+    padding-bottom: 60px;
+    padding-top: 60px;
+
+
+
     & .container{
     display: flex;
-    margin-bottom: 95px;
+    // margin-bottom: 95px;
     flex-direction: column;
     }
 
     &__title {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
-        font-size: 36px;
+        font-size: 28px;
         letter-spacing: 0.03em;
         text-align: center;
         color: $title-color;
-    margin-bottom: 95px;
+    margin-bottom: 30px;
     }
 
     &__list {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
     }
 
     &__item {
-        border-bottom-left-radius: 4px;
-        border-bottom-right-radius: 4px;
+        // border-bottom-left-radius: 4px;
+        // border-bottom-right-radius: 4px;
         box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
         background: $main-color;
+        width: 450px;
+        height: 622px;
     }
 
     &__foto { 
-    width: 270px;
+    width: 450px;
+    height: 460px;
     margin-bottom: 30px;
     }
 
@@ -57,14 +63,14 @@
         letter-spacing: 0.03em;
         text-align: center;
         color: $text-color;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
     }
 
     &__box {
     display: flex;
     justify-self: center;
     gap: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
     }
     
     &__link {

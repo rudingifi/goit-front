@@ -1,4 +1,4 @@
-.phero, .clients, .team, .gallery {
+.phero, .clients {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -381,6 +381,16 @@ h1, h2, h3, p {
   color: #757575;
 }
 
+.gallery {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .gallery {
+    padding-bottom: 94px;
+    padding-top: 94px;
+    display: block;
+  }
+}
 .gallery .container {
   flex-direction: column;
   align-items: center;
@@ -424,33 +434,36 @@ h1, h2, h3, p {
 
 .team {
   background-color: #F5F4FA;
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 .team .container {
   display: flex;
-  margin-bottom: 95px;
   flex-direction: column;
 }
 .team__title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   letter-spacing: 0.03em;
   text-align: center;
   color: #212121;
-  margin-bottom: 95px;
+  margin-bottom: 30px;
 }
 .team__list {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }
 .team__item {
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
   background: #FFF;
+  width: 450px;
+  height: 622px;
 }
 .team__foto {
-  width: 270px;
+  width: 450px;
+  height: 460px;
   margin-bottom: 30px;
 }
 .team__name {
@@ -469,13 +482,13 @@ h1, h2, h3, p {
   letter-spacing: 0.03em;
   text-align: center;
   color: #757575;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 .team__box {
   display: flex;
   justify-self: center;
   gap: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 .team__link {
   display: flex;
