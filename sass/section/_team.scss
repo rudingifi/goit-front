@@ -7,7 +7,10 @@
     padding-bottom: 60px;
     padding-top: 60px;
 
-
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 94px;
+        padding-top: 94px;
+    }
 
     & .container{
     display: flex;
@@ -23,12 +26,29 @@
         text-align: center;
         color: $title-color;
     margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+        font-weight: 700;
+        font-size: 36px;
+    }
+
     }
 
     &__list {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    // align-items: center;
+    gap: 30px;
+
+    @media screen and (min-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
     }
 
     &__item {
@@ -38,12 +58,32 @@
         background: $main-color;
         width: 450px;
         height: 622px;
+
+        @media screen and (min-width: 768px) {
+            width: 354px;
+            height: 536px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 270px;
+            height: 428px;
+        }
     }
 
     &__foto { 
     width: 450px;
     height: 460px;
     margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+        height: 374px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+        height: 260px;
+    }
     }
 
     &__name {

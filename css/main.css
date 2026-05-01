@@ -437,6 +437,12 @@ h1, h2, h3, p {
   padding-bottom: 60px;
   padding-top: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+}
 .team .container {
   display: flex;
   flex-direction: column;
@@ -450,10 +456,28 @@ h1, h2, h3, p {
   color: #212121;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 1200px) {
+  .team__title {
+    font-weight: 700;
+    font-size: 36px;
+  }
+}
 .team__list {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 .team__item {
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
@@ -461,10 +485,34 @@ h1, h2, h3, p {
   width: 450px;
   height: 622px;
 }
+@media screen and (min-width: 768px) {
+  .team__item {
+    width: 354px;
+    height: 536px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    width: 270px;
+    height: 428px;
+  }
+}
 .team__foto {
   width: 450px;
   height: 460px;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .team__foto {
+    width: 354px;
+    height: 374px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__foto {
+    width: 270px;
+    height: 260px;
+  }
 }
 .team__name {
   font-family: "Roboto", sans-serif;
