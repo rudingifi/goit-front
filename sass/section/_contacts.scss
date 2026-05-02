@@ -3,18 +3,25 @@
 @use"../utils/placeholder";
 
 .contacts {
-    background: $footer-bg;
-    // padding-top: 60px;
-    // padding-bottom: 60px;
+    background: $footer-bg; 
+    padding-top: 60px;
+    padding-bottom: 60px;
 
-    @extend %contakti-futer;
+    
 
     & .container {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-direction: row;
+    }
     }
 
     & .container:last-child > div:last-child {
+        display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 12px;
@@ -23,23 +30,39 @@
     &__box {
     display: flex;
     flex-direction: column;
-    margin-right: 70px;
+    align-items: center;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+    }
     }
 
-    &__logo {
+    &__title {
+        display: flex;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
     letter-spacing: 0.03em;
     color: $accent-color;
     margin-bottom: 20px;
+    justify-content: center;
+
+    @media screen and (min-width: 1200px) {
+     font-size: 26px;   
+    }
     }
 
     &__list {
     display: flex;
-    gap: 9px;
+    gap: 8px;
     flex-direction: column;
+
+    @media screen and (min-width: 1200px) {
+        gap: 9px;
     }
+    }
+
 
     &__address {
     font-family: "Roboto", sans-serif;
@@ -47,6 +70,11 @@
     font-size: 14px;
     letter-spacing: 0.03em;
     color: $main-color;
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+     text-align: left;   
+    }
     }
 
     &__info {
@@ -55,23 +83,31 @@
     font-size: 14px;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-    }
+    text-align: center;
 
-    &__phone {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    @media screen and (min-width: 1200px) {
+     text-align: left;   
     }
+    }
+    
 }
 
 .socials {
     display: flex;
     flex-direction: column;
-    margin-right: 93px;
+    text-align: center;
+    
+    @media screen and (min-width: 768px) {
+        
+        margin-left: 165px;
+        margin-top: 19px;
+    }
 
-    &__button {
+    @media screen and (min-width: 1200px) {
+     text-align: left;
+    }
+
+    &__title {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 14px;
@@ -79,6 +115,9 @@
     color: $main-color;
     text-transform: uppercase;
     margin-bottom: 20px;
+
+
+        
     }
 
     &__list {
@@ -107,28 +146,63 @@
     }
 }
 
-.subscribe {
+.double-box {
+    margin-bottom: 60px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+    }
 
-    &__text {
+    @media screen and (min-width: 1200px) {
+     margin-bottom: 0;
+    }
+}
+
+.subscribe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;  
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: column;
+    margin-left: 93px;
+  }
+
+  &__title {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 3%;
     text-transform: uppercase;
     color: $main-color;
-    display: block;
     margin-bottom: 20px;
-    }
+    text-align: center;
 
-    &__form {
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+      letter-spacing: 6%;
+      text-align: left;
+      width: 100%;
+    }
+  }
+
+  &__form {
     display: flex;
     align-items: center;
-    gap: 12px;
-    }
+    justify-content: center;
+    flex-direction: column; 
 
-    &__input {
+    @media screen and (min-width: 1200px) {
+      flex-direction: row; 
+      align-items: center;
+      gap: 12px;
+    }
+  }
+
+  &__input {
     border-radius: 4px;
-    width: 358px;
+    width: 290px;       
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     background: transparent;
@@ -137,13 +211,28 @@
     font-size: 16px;
     outline: none;
     transition: border-color 350ms;
+    margin-bottom: 20px; 
+
+    @media screen and (min-width: 768px) {
+      width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+      height: 50px;
+      margin-bottom: 0; 
+    }
 
     &::placeholder {
-    color: rgba(255, 255, 255, 0.6);
-    }
+      color: rgba(255, 255, 255, 0.6);
     }
 
-    &__button {
+    &:focus {
+      border-color: rgba(255, 255, 255, 0.6);
+    }
+  }
+
+  &__button {
     font-family: "Roboto", sans-serif;
     border: none;
     border-radius: 4px;
@@ -154,24 +243,29 @@
     font-size: 16px;
     letter-spacing: 0.06em;
     color: $main-color;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
     cursor: pointer;
+    transition: background 350ms;
+
+    &:hover {
+      background: darken($accent-color, 8%);
+    }
 
     &::after {
-    content: "";
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    flex-shrink: 0;
+      content: "";
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      flex-shrink: 0;
     }
-    }
+  }
 }
 
 
