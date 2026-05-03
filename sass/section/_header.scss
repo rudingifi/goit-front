@@ -168,11 +168,11 @@
 
 .knopka {
     border: none;
-    display: none;
+    display: block;
     background-color: #fff;
         
-    @media screen and (max-width: 768px) {
-        display: block;
+    @media screen and (min-width: 768px) {
+        display: none;
     }
 
     &__icon {

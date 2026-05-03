@@ -202,12 +202,12 @@ h1, h2, h3, p {
 
 .knopka {
   border: none;
-  display: none;
+  display: block;
   background-color: #fff;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .knopka {
-    display: block;
+    display: none;
   }
 }
 .knopka__icon {
@@ -245,8 +245,13 @@ h1, h2, h3, p {
   text-transform: uppercase;
   text-align: center;
   color: #FFF;
-  width: 360px;
+  width: 100%;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 480px) {
+  .hero__title {
+    width: 360px;
+  }
 }
 @media screen and (min-width: 768px) {
   .hero__title {
@@ -300,8 +305,13 @@ h1, h2, h3, p {
   }
 }
 .features__item {
-  width: 450px;
+  width: 100%;
   height: 226px;
+}
+@media screen and (min-width: 480px) {
+  .features__item {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .features__item {
@@ -316,7 +326,7 @@ h1, h2, h3, p {
   }
 }
 .features__box {
-  width: 450px;
+  width: 100%;
   height: 120px;
   background-color: #F5F4FA;
   margin-bottom: 30px;
@@ -324,6 +334,11 @@ h1, h2, h3, p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 480px) {
+  .features__box {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .features__box {
@@ -477,8 +492,14 @@ h1, h2, h3, p {
 .team__item {
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
   background: #FFF;
-  width: 450px;
-  height: 622px;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 480px) {
+  .team__item {
+    width: 450px;
+    height: 622px;
+  }
 }
 @media screen and (min-width: 768px) {
   .team__item {
@@ -493,9 +514,14 @@ h1, h2, h3, p {
   }
 }
 .team__foto {
-  width: 450px;
-  height: 460px;
+  width: 100%;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 480px) {
+  .team__foto {
+    width: 450px;
+    height: 460px;
+  }
 }
 @media screen and (min-width: 768px) {
   .team__foto {
@@ -615,12 +641,17 @@ h1, h2, h3, p {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 16px 52px;
+  padding: 16px 10px;
   transition-property: border;
   transition-duration: 350ms;
 }
 .clients__item:hover {
   border: solid 1px #2196F3;
+}
+@media screen and (min-width: 480px) {
+  .clients__item {
+    padding: 16px 52px;
+  }
 }
 @media screen and (min-width: 768px) {
   .clients__item {
@@ -634,13 +665,18 @@ h1, h2, h3, p {
 }
 .clients__icon {
   fill: #AFB1B8;
-  width: 106px;
+  width: 100%;
   height: 60px;
   transition-property: fill;
   transition-duration: 350ms;
 }
 .clients__icon:hover {
   fill: #2196F3;
+}
+@media screen and (min-width: 480px) {
+  .clients__icon {
+    width: 106px;
+  }
 }
 
 .contacts {
