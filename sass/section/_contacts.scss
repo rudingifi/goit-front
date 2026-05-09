@@ -96,11 +96,16 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin-top: 60px;
+
+    @media screen and (min-width: 480px) {
+        
+    }
     
     @media screen and (min-width: 768px) {
         
         margin-left: 165px;
-        margin-top: 19px;
+        margin-top: 0;
     }
 
     @media screen and (min-width: 1200px) {
@@ -151,6 +156,7 @@
     @media screen and (min-width: 768px) {
         display: flex;
         flex-direction: row;
+        align-items: baseline;
     }
 
     @media screen and (min-width: 1200px) {
