@@ -20,6 +20,32 @@
     <div class="container">
       <!-- <p class="animate__animated animate__bounce">tesst xoxoox</p> -->
       <p class="header__webstudio">Web<span>Studio</span></p>
+
+       <button class="header__knopka" data-menu-open><svg class="header__icon">
+          <use href="./img/symbol-defs.svg#icon-menu"></use>
+        </svg>
+      </button>
+      <div class="menu is-hidden" data-menu>
+        <button class="menu__knopka" data-menu-close type="button"><svg class="menu__close">
+          <use href="./img/symbol-defs.svg#icon-cross"></use>
+        </svg></button>
+        <ul class="menu__list">
+          <li class="menu__item"><a href="./index.html" class="menu__link active">Студія</a></li>
+          <li class="menu__item"><a href="./portfolio.html" class="menu__link">Портфоліо</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Контакти</a></li>
+        </ul>
+        <ul class="menu__items">
+          <li class="menu__elm"><a href="tel:+380961111111" class="menu__contact">+38 096 111 11 11</a></li>
+          <li class="menu__elm"><a href="mailto:info@devstudio.com" class="menu__contact">info@devstudio.com</a></li>
+        </ul>
+        <ul class="menu__socials">
+          <li class="menu__sub"><a href="" class="menu__media">Instagram</a></li>
+          <li class="menu__sub"><a href="" class="menu__media">Twitter</a></li>
+          <li class="menu__sub"><a href="" class="menu__media">Facebook</a></li>
+          <li class="menu__sub"><a href="" class="menu__media">Linkedin</a></li>
+        </ul>
+      </div>
+
       <nav class="header__nav">
         <ul class="header__list">
           <li class="header__item">
@@ -32,6 +58,7 @@
             <a class="header__link" href="">Контакти</a>
           </li>
         </ul>
+        
       </nav>
       <ul class="header__contacts">
         <li class="header__item">
@@ -53,10 +80,7 @@
         </li>
       </ul>
 
-      <button class="knopka"><svg class="knopka__icon">
-          <use href="./img/symbol-defs.svg#icon-menu"></use>
-        </svg></button>
-
+     
     </div>
   </header>
   <main class="main">
@@ -326,7 +350,7 @@
   </footer>
 
 
-  <!-- <div class="backdrop is-hidden" data-modal>
+  <div class="backdrop is-hidden" data-modal>
       <div class="model">
         <button class="model__button" type="button" data-modal-close><svg class="model__icon">
           <use href="./img/symbol-defs.svg#icon-cross"></use>
@@ -353,7 +377,7 @@
               <use href="./img/symbol-defs.svg#icon-box-add"></use>
             </svg>
           </label>
-          <label class="model__label">коментар
+          <label class="model__label"> коментар
             <textarea placeholder="Введіть текст" class="model__comment">
             </textarea>
           </label>
@@ -366,7 +390,8 @@
       </form>
       </div>
     </div>
-    <script type="module" src="./modal.js"></script> -->
+    <script type="module" src="./modal.js"></script>
+    <script src="./menu.js"></script>
 </body>
 
 </html>

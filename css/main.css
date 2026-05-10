@@ -190,20 +190,121 @@ h1, h2, h3, p {
   transition-property: fill;
   transition-duration: 250ms;
 }
-
-.knopka {
+.header__knopka {
   border: none;
   display: block;
   background-color: #fff;
 }
 @media screen and (min-width: 768px) {
-  .knopka {
+  .header__knopka {
     display: none;
   }
 }
-.knopka__icon {
+.header__icon {
   width: 40px;
   height: 40px;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 1;
+  padding: 48px 0 48px 40px;
+  opacity: 1;
+}
+.menu__knopka {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+.menu__knopka:hover .menu__close {
+  fill: #2196F3;
+}
+.menu__close {
+  width: 30px;
+  height: 30px;
+  transition-property: fill;
+  transition-duration: 350ms;
+}
+.menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.menu__link {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+.menu__items {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 150px;
+  margin-bottom: 64px;
+}
+.menu__contact {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 34px;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+.menu__elm:last-child .menu__contact {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+.menu__socials {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.menu__media {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 122%;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+.menu__sub {
+  display: flex;
+  align-items: center;
+}
+.menu__sub:not(:last-child)::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 22px;
+  margin-left: 10px;
+  background-color: rgba(33, 33, 33, 0.2);
+}
+
+.active {
+  color: #2196F3;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .hero {
@@ -221,7 +322,7 @@ h1, h2, h3, p {
   background-size: cover;
   background-position: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .hero {
     padding-bottom: 200px;
     padding-top: 200px;
@@ -244,7 +345,7 @@ h1, h2, h3, p {
     width: 360px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .hero__title {
     width: 696px;
     font-size: 44px;
@@ -263,6 +364,11 @@ h1, h2, h3, p {
   letter-spacing: 0.06em;
   text-align: center;
   color: #FFF;
+}
+@media screen and (min-width: 1200px) {
+  .hero__button {
+    width: 216px;
+  }
 }
 .hero .container {
   flex-direction: column;
@@ -408,7 +514,6 @@ h1, h2, h3, p {
 .gallery__list {
   display: flex;
   gap: 30px;
-  margin-bottom: 95px;
 }
 .gallery__item {
   width: 370px;
@@ -945,8 +1050,8 @@ h1, h2, h3, p {
 }
 
 .model {
-  width: 528px;
-  height: 581px;
+  width: 100%;
+  height: 609px;
   background-color: #FFF;
   border-radius: 4px;
   position: absolute;
@@ -954,6 +1059,17 @@ h1, h2, h3, p {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 40px;
+}
+@media screen and (min-width: 450px) {
+  .model {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .model {
+    width: 528px;
+    height: 581px;
+  }
 }
 .model__button {
   width: 40px;
@@ -973,16 +1089,16 @@ h1, h2, h3, p {
   fill: #2196F3;
 }
 .model__icon {
-  width: 20px;
-  height: 20px;
-  fill: gray;
+  width: 18px;
+  height: 18px;
+  fill: #000;
   transition-property: fill;
   transition-duration: 350ms;
 }
 .model__title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 20px;
   letter-spacing: 0.03em;
   text-align: center;
   color: #212121;
@@ -993,14 +1109,13 @@ h1, h2, h3, p {
   font-size: 12px;
   letter-spacing: 0.01em;
   color: #757575;
-  display: inline-block;
-  margin-bottom: 4px;
+  display: block;
   position: relative;
 }
 .model__input {
   outline: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  width: 448px;
+  width: 100%;
   height: 40px;
   margin-top: 4px;
   margin-bottom: 10px;
@@ -1008,6 +1123,16 @@ h1, h2, h3, p {
   padding-left: 42px;
   transition-property: outline;
   transition-duration: 350ms;
+}
+@media screen and (min-width: 480px) {
+  .model__input {
+    width: 370px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .model__input {
+    width: 448px;
+  }
 }
 .model__input:hover, .model__input:focus {
   outline: 1px solid #2196F3;
@@ -1021,11 +1146,11 @@ h1, h2, h3, p {
   position: absolute;
   top: 30px;
   left: 12px;
-  fill: gray;
+  fill: #000;
 }
 .model__comment {
   display: block;
-  width: 448px;
+  width: 100%;
   outline: 1px solid rgba(33, 33, 33, 0.2);
   border: rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -1039,6 +1164,16 @@ h1, h2, h3, p {
   margin-top: 4px;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 480px) {
+  .model__comment {
+    width: 370px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .model__comment {
+    width: 448px;
+  }
+}
 .model__box {
   display: flex;
   justify-content: center;
@@ -1050,7 +1185,7 @@ h1, h2, h3, p {
 }
 .model__text {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 171%;
   letter-spacing: 0.03em;
   color: #757575;
@@ -1059,7 +1194,7 @@ h1, h2, h3, p {
 }
 .model__link {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 171%;
   letter-spacing: 0.03em;
   color: #2196F3;
@@ -1068,10 +1203,11 @@ h1, h2, h3, p {
           text-decoration-skip-ink: none;
 }
 .model__submit {
-  font-weight: 400;
+  font-weight: 700;
   font-size: 16px;
   line-height: 188%;
   letter-spacing: 0.06em;
+  border: none;
   color: #FFF;
   text-align: center;
   border-radius: 4px;
@@ -1179,7 +1315,6 @@ h1, h2, h3, p {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  height: 404px;
   width: 100%;
 }
 @media screen and (min-width: 768px) {

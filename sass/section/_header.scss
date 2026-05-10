@@ -164,9 +164,7 @@
     transition-duration: 250ms;
 }
 
-}
-
-.knopka {
+&__knopka {
     border: none;
     display: block;
     background-color: #fff;
@@ -174,12 +172,16 @@
     @media screen and (min-width: 768px) {
         display: none;
     }
-
-    &__icon {
-        width: 40px;
-        height: 40px;
-    }
 }
+
+&__icon {
+    width: 40px;
+    height: 40px;
+}
+
+}
+
+
 
 
 

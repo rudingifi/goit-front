@@ -15,8 +15,8 @@
 }
 
 .model {
-    width: 528px;
-    height: 581px;
+    width: 100%;
+    height: 609px;
     background-color: $main-color;
     border-radius: 4px;
     position: absolute;
@@ -24,6 +24,15 @@
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 40px;
+
+    @media screen and (min-width: 450px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+       width: 528px;
+       height: 581px;
+    }
     
 
     &__button {
@@ -49,9 +58,9 @@
     
 
     &__icon {
-    width: 20px;
-    height: 20px;
-    fill: gray;
+    width: 18px;
+    height: 18px;
+    fill: $logo-color;
     transition-property: fill;
     transition-duration: 350ms;
     }
@@ -59,7 +68,7 @@
     &__title {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: 0.03em;
     text-align: center;
     color: $title-color;
@@ -71,15 +80,14 @@
     font-size: 12px;
     letter-spacing: 0.01em;
     color: $text-color;
-    display: inline-block;
-    margin-bottom: 4px;
+    display: block;
     position: relative;
     }
 
     &__input {
     outline: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    width: 448px;
+    width: 100%;
     height: 40px;
     margin-top: 4px;
     margin-bottom: 10px;
@@ -87,6 +95,14 @@
     padding-left: 42px;
     transition-property: outline;
     transition-duration: 350ms;
+
+    @media screen and (min-width: 480px) {
+       width: 370px;
+    }
+
+    @media screen and (min-width: 1200px) {
+       width: 448px;
+    }
     &:hover,
     &:focus {
     outline: 1px solid $accent-color;
@@ -104,12 +120,12 @@
     position: absolute;
     top: 30px;
     left: 12px;
-    fill: gray;
+    fill: $logo-color;
     }
 
     &__comment {
     display: block;
-    width: 448px;
+    width: 100%;
     outline: 1px solid rgba(33, 33, 33, 0.2);
     border: rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -122,6 +138,15 @@
     color: rgba(117, 117, 117, 0.5);
     margin-top: 4px;
     margin-bottom: 20px;
+    
+
+    @media screen and (min-width: 480px) {
+      width: 370px;   
+    }
+
+    @media screen and (min-width: 1200px) {
+       width: 448px;
+    }
     }
 
     &__box {
@@ -137,7 +162,7 @@
 
     &__text {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 171%;
     letter-spacing: 0.03em;
     color: $text-color;
@@ -147,7 +172,7 @@
 
     &__link {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 171%;
     letter-spacing: 0.03em;
     color: $accent-color;
@@ -156,10 +181,11 @@
     }
 
     &__submit {
-    font-weight: 400;
+    font-weight: 700;
     font-size: 16px;
     line-height: 188%;
     letter-spacing: 0.06em;
+    border: none;
     color: $main-color;
     text-align: center;
     border-radius: 4px;
@@ -170,6 +196,8 @@
     display: block;
     margin: 0 auto;
     margin-top: 30px;
+
+    
     }
 }
 

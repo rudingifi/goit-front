@@ -16,7 +16,7 @@
      background-size: cover;
      background-position: center;
 
-     @media screen and (min-width: 768px) {
+     @media screen and (min-width: 1200px) {
         padding-bottom: 200px;
         padding-top: 200px;
     }
@@ -38,7 +38,7 @@
             width: 360px;
         }
         
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 1200px) {
             width: 696px;
             font-size: 44px;
     }
@@ -56,6 +56,10 @@
     letter-spacing: 0.06em;
     text-align: center;
     color: $main-color;
+
+    @media screen and (min-width: 1200px) {
+        width: 216px;
+    }
     }
     
     & .container {
